@@ -3,36 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Poochi is an AI-powered pet food subsciption that
+    will satisfy your pup, 365 days a year. Tailored to their personal tastes and
+    nutritional requirements"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+  
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style2.css"/>
-    <title>Poochi</title>
+    <link rel="stylesheet" href="queries.css"/>
+
+    <title>Poochi &mdash; It's Pawesome!</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico.png">
 </head>
 <body>
     <header class="header">
+        <a href="#">
         <img class="logo" alt="Poochi logo" src="img/logo.svg">
-
+        </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">Section 1</a></li>
-                <li><a class="main-nav-link" href="#">Section 2</a></li>
-                <li><a class="main-nav-link" href="#">Section 3</a></li>
-                <li><a class="main-nav-link" href="#">Section 4</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+                <li><a class="main-nav-link" href="#how">How it works</a></li>
+                <li><a class="main-nav-link" href="#meals">Meals</a></li>
+                <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+                <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="main-nav-link nav-cta" href="#cta">Try for Free</a></li>
             </ul>
         </nav>
+
+        <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon><ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon></button>
+
+
     </header>
     <main>
 
     <section class="section-hero">
         <div class="hero">
         <div class="hero-text-box">
-            <h1 class="heading-primary">Keeping your best friend healthy and happy, the way nature intended
+            <h1 class="heading-primary">Keep your pup healthy and happy, the way nature intended
             </h1>
             <p class="hero-description">
                 The smart 365-days-per-year human-grade pet food subscription that will have your pup eating healthy in no time.
@@ -40,23 +55,23 @@
                 that are sure to rock their tastebuds. 
                 
             </p>
-            <a href="#" class="btn btn--full margin-right-sm ">Take charge today</a>
-            <a href="#" class="btn btn--outline">Learn More &darr;</a>
+            <a href="#cta" class="btn btn--full margin-right-sm">Take charge today</a>
+            <a href="#how" class="btn btn--outline learn-button">Learn More &darr;</a>
+
+            <div class="delivered-meals">
+                <div class="delivered-imgs">
+                    <img src="img/cust_1.jpg" class="cust-meal-pic" alt="customer photo">
+                    <img src="img/cust_2.jpg" class="cust-meal-pic" alt="customer photo">
+                    <img src="img/cust_3.jpg" class="cust-meal-pic" alt="customer photo">
+                    <img src="img/cust_4.jpg" class="cust-meal-pic" alt="customer photo">
+                    <img src="img/cust_5.jpg" class="cust-meal-pic" alt="customer photo">
+                    <img src="img/cust_6.jpg" class="cust-meal-pic" alt="customer photo">
+                </div>
+                <p class="delivered-text"><span>250,000+</span> meals delivered last year!</p>
+            </div>
         </div>
-        
         <div class="hero-img-box">
             <img src="img/heroimage.jpg" class="hero-img" alt="dog looking forward with food bowls in front of him" />
-        </div>
-        <div class="delivered-meals">
-            <div class="delivered-imgs">
-                <img src="img/cust_1.jpg" class="cust-meal-pic" alt="customer photo">
-                <img src="img/cust_2.jpg" class="cust-meal-pic" alt="customer photo">
-                <img src="img/cust_3.jpg" class="cust-meal-pic" alt="customer photo">
-                <img src="img/cust_4.jpg" class="cust-meal-pic" alt="customer photo">
-                <img src="img/cust_5.jpg" class="cust-meal-pic" alt="customer photo">
-                <img src="img/cust_6.jpg" class="cust-meal-pic" alt="customer photo">
-            </div>
-            <p class="delivered-text"><span>250,000+</span> meals delivered last year!</p>
         </div>
         </div>
     </section>
@@ -76,7 +91,7 @@
 
     </section>
 
-    <section class="section-how">
+    <section class="section-how" id="how">
     <div class="container">
         <span class="subheading">How it works</span>
         <h2 class="heading-secondary">Jump into canine health in 3 simple steps </h2>
@@ -118,7 +133,7 @@
             <h3 class="heading-tertiary"> Receive meals at convenient time </h3>
 
             <p class="step-description">
-                 Our talented chefs will cook your selected meal every day, and
+                 Our talented chefs will cook your selected meal weekly, and
                  we will deliver it to your door whenever works best for you. You can change delivery schedule and
                   address daily!
             </p>
@@ -129,20 +144,21 @@
     </div>
     </section>
     
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
         <div class="container center-text">
             <span class="subheading">Meals</span>
-            <h2 class="heading-secondary">Poochi AI chooses from 500+ recipes </h2>
+            <h2 class="heading-secondary">Poochi AI chooses from 100+ recipes </h2>
             
         </div>
-
+      
         <div class="container grid grid--3-cols margin-bottom-md">
             <div class="meal">
-                <img src="img/chicken.jpg" class="meal-img" alt="chicken and vegetables in a bowl"/>
+                <img src="img/chicken.jpg" class="meal-img" alt="bowl of dog food"/>
                 <div class="meal-content">
                 <div class="meal-tags">
                 <span class="tag">Low calorie</span>
-                <span class="tag tag--puree">Puree</span>
+                <span class="tag tag--puree">Low sodium</span>
+                </div>
                 </div>
                 <p class="meal-title">Chicken Chipolte</p>
                 <ul class="meal-attributes">
@@ -156,13 +172,14 @@
                         <span><strong>4.9</strong> rating (587)</span></li>
                 </ul>
             </div>
-            </div>
+
             <div class="meal">
-                <img src="img/steak.jpg" class="meal-img" alt="steak and vegetables on a kitchen counter"/>
+                <img src="img/steak.jpg" class="meal-img" alt="bowl of dog food"/>
                 <div class="meal-content">
                 <div class="meal-tags">
                     <span class="tag tag--fiber">High Fiber</span>
-                    <span class="tag tag--whole-food">Whole Food</span>
+                    <span class="tag tag--whole-food">Grassfed</span>
+                    </div>
                     </div>
                 <p class="meal-title">Steakhouse Blues</p>
                 <ul class="meal-attributes">
@@ -176,7 +193,8 @@
                        <span><strong>4.6</strong> rating (492)</span></li>
                 </ul>
             </div>
-            </div>
+                
+
             <div class="diets">
                 <h3 class="heading-tertiary">Works with any diet</h3>
                 <ul class="list">
@@ -191,12 +209,14 @@
                     <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>Grain Free</span></li>
                 </ul>
             </div>
+            </div>
             <div class="container all-recipes">
                 <a href="#" class="link">See all recipes &rarr;</a>
             </div>
-        </div>
+            
+            
     </section>
-    <section class="section-testimonials grid grid--2-cols">
+    <section class="section-testimonials grid grid--2-cols" id="testimonials">
         <div class="testimonials-container">
             <span class="subheading">Testimonials</span>
             <h2 class="heading-secondary">Once they try it, there is no other choice...</h2>
@@ -244,25 +264,25 @@
         </div>
         <div class="gallery">
             <figure class="gallery-item">
-                <img src="img/gallery/gallery-1.jpg" class="gallery-img"   alt="photo of beautifully arrange food"/></figure>
+                <img src="img/dog 1.jpg" class="gallery-img"   alt="photo of happy dog"/></figure>
             <figure class="gallery-item">
-                <img src="img/gallery/gallery-10.jpg" class="gallery-img"  alt="photo of beautifully arrange food"/></figure>
+                <img src="img/dog 2.jpg" class="gallery-img"  alt="photo of happy dog"/></figure>
             <figure class="gallery-item">
-                <img src="img/gallery/gallery-11.jpg" class="gallery-img"  alt="photo of beautifully arrange food"/></figure>
+                <img src="img/dog 3.jpg" class="gallery-img"  alt="photo of happy dog"/></figure>
              <figure class="gallery-item">
-                <img src="img/gallery/gallery-12.jpg" class="gallery-img"  alt="photo of beautifully arrange food"/></figure>
+                <img src="img/dog 4.jpg" class="gallery-img"  alt="photo of happy dog"/></figure>
             
 
                 <figure class="gallery-item">
-                    <img src="img/gallery/gallery-3.jpg " alt="photo of beautifully arrange food"/></figure>
+                    <img src="img/dog 5.jpg" class="gallery-img" alt="photo of happy dog"/></figure>
                 <figure class="gallery-item">
-                    <img src="img/gallery/gallery-4.jpg" class="gallery-img" alt="photo of beautifully arrange food"/></figure>
+                    <img src="img/dog 6.jpg" class="gallery-img" alt="photo of happy dog"/></figure>
                 <figure class="gallery-item">
-                    <img src="img/gallery/gallery-5.jpg" class="gallery-img" alt="photo of beautifully arrange food"/></figure>
+                    <img src="img/dog 7.jpg" class="gallery-img" alt="photo of happy dog"/></figure>
                  <figure class="gallery-item">
-                    <img src="img/gallery/gallery-7.jpg" class="gallery-img" alt="photo of beautifully arrange food"/></figure>       
+                    <img src="img/dog 8.jpg" class="gallery-img" alt="photo of happy dog"/></figure>       
                 <figure class="gallery-item">
-                    <img src="img/gallery/gallery-8.jpg" class="gallery-img" alt="photo of beautifully arrange food"/></figure>       
+                    <img src="img/dog 9.jpg" class="gallery-img last-img" alt="photo of happy dog"/></figure>       
 
 
             
@@ -272,27 +292,27 @@
 
 
     </section>
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
         <div class="container">
             <span class="subheading">Pricing</span>
             <h2 class="heading-secondary">Quality ingredients within any budget </h2>
         </div>
-        <div class="container grid grid--2-cols price-grid">
+        <div class="container grid grid--2-cols pricing-grid margin-bottom-md">
             <div class="pricing-plan pricing-plan--starter">
             <header class="plan-header">
               <p class="plan-name">Starter</p>
               <p class="plan-price"><span>$</span>69</p> 
               <p class="plan-text">per month. That's just $2.30 per meal!</p>
             </header>
-              <ul class="list price-list">
+              <ul class="list">
                 <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>1 meal per day</span></li>
-                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>Order between 11am and 9pm</span></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>Order 11am & 9pm</span></li>
                 <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>Delivery is free</span></li>
                 <li class="list-item"><ion-icon class="list-icon" name="close-circle-outline"></ion-icon></li>
                
               </ul>
-              <div class="plan-sign-up">
-              <a href="#" class="btn btn--full ">Take charge today</a>
+              <div class="plan-sign-up sign-up-starter">
+              <a href="#cta" class="btn btn--full ">Take charge today</a>
               </div>
         
             </div>
@@ -302,24 +322,35 @@
                 <p class="plan-price"><span>$</span>120</p> 
                 <p class="plan-text">per month. That's just $2 per meal!</p>
             </header>
-                <ul class="list price-list">
+                <ul class="list">
                   <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span><strong>2 meals</strong> per day</span></li>
                   <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>Order <strong>24/7</strong></span></li>
                   <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>Delivery is free</span></li>
-                  <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>Access to the latest recipes</span></li>
+                  <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon><span>Access to all recipes</span></li>
                 </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <div class="plan-sign-up">
-                <a href="#" class="btn btn--full ">Take charge today</a>
+                <a href="#cta" class="btn btn--full ">Take charge today</a>
                 </div>
             </div>
 
+        </div>
+
+        <div class="container grid">
+            <aside class="plan-details">Prices include all applicable taxes. You can cancel at any time.
+                Both plans include the following:
+            </aside>
         </div>
 
         <div class="container grid grid--4-cols ">
             <div class="feature">
                 <ion-icon name="calendar-number-outline" class="feature-icon"></ion-icon>
                 <p class="feature-title">Never cook again!</p>
-                    <p class="feature-text">Our subscriptions cover 
+                    <p class="feature-text feature-fix">Our subscriptions cover 
                     365 days per year, even including major holidays.
                     </p>
             </div>
@@ -334,19 +365,19 @@
             </div>
             <div class="feature">
                 <div class="feature">
-                    <ion-icon name="calendar-number-outline" class="feature-icon"></ion-icon>
-                    <p class="feature-title">Never cook again!</p>
-                        <p class="feature-text">Our subscriptions cover 
-                        365 days per year, even including major holidays.
+                    <ion-icon name="trash-outline" class="feature-icon"></ion-icon>
+                    <p class="feature-title ">No waste</p>
+                        <p class="feature-text feature-fix">All our partners only use reusable
+                             containers to package all of our meals.
                         </p>
                 </div>
             </div>
             <div class="feature">
                 <div class="feature">
-                    <ion-icon name="calendar-number-outline" class="feature-icon"></ion-icon>
-                    <p class="feature-title">Never cook again!</p>
-                        <p class="feature-text">Our subscriptions cover 
-                        365 days per year, even including major holidays.
+                    <ion-icon name="pause-circle-outline" class="feature-icon"></ion-icon>
+                    <p class="feature-title">Pause anytime</p>
+                        <p class="feature-text">Going on vacation? Just pause your
+                             subscription, and we refund unused days.
                         </p>
                 </div>
             </div>
@@ -354,11 +385,138 @@
         </div>
 
     </section>
+    <section class="section-cta" id="cta">
+        <div class="container form-img-fix">
+            <div class="cta">
+            <div class="cta-text-box">
+                <h2 class="heading-secondary">Let your pooch try it for free!</h2>
+                <p class="cta-text">Healthy, tasty and customizable meals are waiting for your best friend. Start feeding what they need
+                    and what they want. You can cancel or pause anytime. And their first meal is on us!
+                </p>
+                <form class="cta-form" name="sign-up" netlify>
+                    <div>
+                    <label for="full-name">Full Name</label>
+                    <input name="full-name" id="full-name" type="text" placeholder="Jane Doe" required/>
+                    </div>
+
+                    <div>
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" placeholder="you@example.com" required/>
+                    </div>
+
+                    <div>
+                    <label for="select-where">Where did you hear about us?</label>
+                    <select name="select-where" id="select-where" required>
+                        <option value="">Please choose an option:</option>
+                        <option value="friends">Friends and family</option>
+                        <option value="youtube">Youtube</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="pet-store">Local pet store</option>
+                        <option value="other">Other</option>
+                    </select>
+                    </div>
+
+                    <button class="btn btn--form">Sign up now!</button>
+
+
+                </form>
+
+            </div>
+            <div class="cta-img-box" role="img" aria-label="Dog high-fiving owner">
+
+                <img id="highfive" src="img/highfive.jpg">
+            </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
     
     </main>
+    
+    <footer class="footer">
+        <div class="container grid grid--footer">
+            <div class="logo-col">
+                <a href="#" class="footer-logo"><img class="logo" alt="Poochi logo" src="img/logo.svg">
+                </a>
 
+                <ul class="social-links">
+                    <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
+                    <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+
+                </ul>
+
+                <p class="copyright">Copyright &copy; <span class="year">2022</span> by Poochi ,Inc. 
+                    <br>
+                    All rights
+                    reserved.
+                </p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contact Us</p>
+                <address class="contacts">
+                  <p class="address">623 Harrison St.
+                    <br>
+                     San Francisco, CA 94107</p>
+                   <p>
+                    <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+                   </p>
+                   <p>
+                    <a class="footer-link" href="mailto:contact@poochi.com">contact@poochi.com</a>
+                   </p>
+                </address>
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">Account</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Create Account</a></li>
+                    <li><a class="footer-link" href="#">Sign In</a></li>
+                    <li><a class="footer-link" href="#">iOS app</a></li>
+                    <li><a class="footer-link" href="#">Android app</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Company</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">About Poochi</a></li>
+                    <li><a class="footer-link" href="#">For Business</a></li>
+                    <li><a class="footer-link" href="#">Cooking partners</a></li>
+                    <li><a class="footer-link" href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Resources</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Recipe directory</a></li>
+                    <li><a class="footer-link" href="#">Help center</a></li>
+                    <li><a class="footer-link" href="#">Privacy & terms</a></li>
+                </ul>
+
+
+
+            </nav>
+
+
+
+        </div>
+
+
+
+    </footer>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+<script defer src="script.js"></script>
+
+
+
+
+
+
 </body>
 </html>
